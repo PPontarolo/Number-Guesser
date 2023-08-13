@@ -13,6 +13,9 @@ Give Craig a number and Craig will try to guess the number that the user gives. 
             -EX: Craig guesses 345. Users number is 543. Craig's number is lower than the users. Craig changes his range from 1-1000 to 346-1000</br>
     -His average guess is 12.5 out of 10 tries. 7-18 guesses range </br>
 
+### Craig2.py
+I took a different approach at this. I wanted to start the number guess by seeing if the users number is higher or lower than 500. by doing this i have cut the numbers range in half hoping to make it easier for Craig2
+
 ## User Guess
 
 User Guess.py
