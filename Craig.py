@@ -7,8 +7,8 @@ y = 0
 
 while x < 1:
     ## PP: give "Craig" a number to guess
-    Num = int(input("Give a number, that is 1-100, for Craig to guess: "))
-    if Num < 1 or Num > 100:
+    Num = int(input("Give a number, that is 1-1000, for Craig to guess: "))
+    if Num < 1 or Num > 1000:
         print("Try Agian...")
     else:
         break ## leave the loop
@@ -43,4 +43,4 @@ def Game(low, high):
 
 ## Run function    
 if __name__ == '__main__': 
-    Game(1,100)
+    Game(1,1000)
