@@ -1,4 +1,4 @@
-## PP: make a code that guess the users number that is between 1 - 100
+## PP: make a code that guess the users number that is between 1 - 1000
 import random ## random
 
 ## while loops
@@ -22,24 +22,19 @@ def Game(low, high):
     while y < 1:
         
         RanNum = random.randint(low, high)
+        count+=1
 
         if RanNum == Num: ## Success
             print("Craig guessed your number!! Your number is {}" .format(RanNum))
-            count+=1
             print("Took Craig {} guesses" .format(count))
             break ## Leave the loop
         elif RanNum > Num: ## too high
             print("Craig guessed {}. Craig guess is too high" .format(RanNum))
             high = RanNum - 1
-            #print("{} - {}" .format(low,high)) ## PP: used this for testing purposes
-            count+=1
         elif RanNum < Num: ## too low
             print("Craig guessed {}. Craig guess is too low" .format(RanNum))
             low = RanNum + 1
-            #print("{} - {}" .format(low,high)) ## PP: used this for testing purposes
-            count+=1
     print("-_-_-_-_-_-_-_-_-_-")
-
 
 ## Run function    
 if __name__ == '__main__': 
