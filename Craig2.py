@@ -22,14 +22,16 @@ print("-_-_-_-_-_-_-_-_-_-")
 ## be able to change the high and low
 def Game(low, high):
 
-    RanNum = random.randint(low, high)
     count = 0
     count+=1
-    if RanNum > 500:
+
+    ## 500 check to cut the range into half
+    if Num > 500:
         low = 500
-    elif RanNum < 500:
+    elif Num < 501:
         high = 500
     else:
+        ## just in case that the number is 500
         print("Craig guessed your number!! Your number is {}" .format(RanNum))
         print("Took Craig {} guesses" .format(count))
         
