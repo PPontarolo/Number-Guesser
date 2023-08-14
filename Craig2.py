@@ -1,4 +1,4 @@
-## PP: make a code that guess the users number that is between 1 - 100
+## PP: make a code that guess the users number that is between 1 - 1000
 import random ## random
 
 print("This is Craig2") ## so i can keep track
