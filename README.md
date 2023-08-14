@@ -22,9 +22,13 @@ I took a different approach to this. I wanted to start the number guess by seein
 
 
 ## Findings on Craig
-As I am designing and perfecting Craig, I am starting to realize that lowering the number of guesses will be almost impossible with a random num guesser. The main component I can change is the run time. I will keep trying to get the guess attempts lowered but I will also start focusing on the run time. </br>
+<b>8/12</b>: As I am designing and perfecting Craig, I am starting to realize that lowering the number of guesses will be almost impossible with a random num guesser. The main component I can change is the run time. I will keep trying to get the guess attempts lowered but I will also start focusing on the run time. </br>
 
-Though a shorter run time would be impressive, also not consistent, just like the guess attempts.
+Though a shorter run time would be impressive, also not consistent, just like the guess attempts. </br>
+
+<b>8/14</b>: After doing Research I have found that 10 is the highest number of guesses someone needs to make while doing the most effective way of finding that number. The process is starting at 500, like Craig2.py, but keeps changing the range in half. This will make the formula (low+high)/2 till the number is found. </br>
+
+At the moment I am making Craig3 and implementing the formula to the code. </br>
 
 ## User Guess
 
