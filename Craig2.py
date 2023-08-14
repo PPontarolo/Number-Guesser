@@ -1,6 +1,5 @@
 ## PP: make a code that guess the users number that is between 1 - 100
 import random ## random
-import math ## for keeping the numbers a whole num
 
 print("This is Craig2") ## so i can keep track
 
@@ -23,9 +22,9 @@ print("-_-_-_-_-_-_-_-_-_-")
 def Game(low, high):
 
     count = 0
-    count+=1
 
     ## 500 check to cut the range into half
+    count+=1
     if Num > 500:
         low = 500
     elif Num < 501:
