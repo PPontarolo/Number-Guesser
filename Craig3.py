@@ -1,6 +1,5 @@
 ## PP: make a code that guess the users number that is between 1 - 1000
 import random ## random
-import math ## this is used to round the numbers
 
 ## while loops
 x = 0;y = 0
@@ -18,23 +17,38 @@ print("-_-_-_-_-_-_-_-_-_-")
 
 ## be able to change the high and low
 def Game(low, high):
-    count = 0
-    CraigGuess = 500
+    count = 0; first = 0
+    CraigGuess = 500.0
 
     while y < 1:
-        
-        count+=1
 
+        count+=1
+        if count == 6: ## debugging
+            break  
         if  CraigGuess > Num: ## too high
             print("Craig guessed {}. Craig guess is too high" .format(CraigGuess))
-            high = CraigGuess
-
-            CraigGuess = math.trunc(CraigGuess/2)
+            #high = (low+high)/2 + 1
+            if first==0:
+                high = CraigGuess-1
+                CraigGuess = ((low+high)/2 )- 1
+                first+=1
+            else:
+                high = CraigGuess
+                CraigGuess = ((low+high)/2 )- 1
+                
         elif CraigGuess < Num: ## too low
             print("Craig guessed {}. Craig guess is too low" .format(CraigGuess))
-            low = CraigGuess
+            #low = (low+high)/2 - 1
+            if first==0:
+                low = CraigGuess+1
+                CraigGuess = ((low+high)/2 )+ 1
+                first+=1
+            else:
+                low = CraigGuess
+                CraigGuess = ((low+high)/2 )+ 1  
         else: ## Success!
             break
+
 
 
     ## winner winner chicken dinner

@@ -26,7 +26,7 @@ I took a different approach to this. I wanted to start the number guess by seein
 
 Though a shorter run time would be impressive, also not consistent, just like the guess attempts. </br>
 
-<b>8/14</b>: After doing Research I have found that 10 is the highest number of guesses someone needs to make while doing the most effective way of finding that number. The process is starting at 500, like Craig2.py, but keeps changing the range in half. This will make the formula (low+high)/2 till the number is found. </br>
+<b>8/14</b>: After doing Research I have found that 10 is the highest number of guesses someone needs to make while doing the most effective way of finding that number. The process is starting at 500, like Craig2.py, but keeps changing the range in half. This will make the formula (low+high)/2±1 till the number is found. </br>
 
 At the moment I am making Craig3 and implementing the formula to the code. </br>
 
