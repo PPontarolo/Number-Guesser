@@ -22,7 +22,7 @@ I took a different approach to this. I wanted to start the number guess by seein
 
 ### Craig3.py
 After doing some research I discovered that the best way of finding a number with a range of 1-1000 is finding the average of the low and high range. </br>
-    >> -Craig3 starts with a guess of 500 and then finds if it's higher or lower than the users guess.</br>
+    -- -Craig3 starts with a guess of 500 and then finds if it's higher or lower than the users guess.</br>
     > -Craig3 then finds the average of the high and low to make another guess and repeats that till reaches the users guess</br>
     > -if the range is one higher and one lower than the users guess, Craig will guess that middle number
 
