@@ -20,11 +20,11 @@ I took a different approach to this. I wanted to start the number guess by seein
     | - Craig2 has the same guess and change range process as Craig.py, besides having the 500 higher or lower check before entering the loop </br>
     > - Craig2 average guess is 12.4 out of 10 tries. 8-19 guesses range </br>
 
-#### Craig3.py
-After doing some research I discovered that the best way of finding a number with a range of 1-1000 is finding the average of the low and high range. </br>
-    - Craig3 starts with a guess of 500 and then finds if it's higher or lower than the users guess.</br>
-    - Craig3 then finds the average of the high and low to make another guess and repeats that till reaches the users guess</br>
-    - if the range is one higher and one lower than the users guess, Craig will guess that middle number
+> #### Craig3.py
+> After doing some research I discovered that the best way of finding a number with a range of 1-1000 is finding the average of the low and high range. </br>
+>    - Craig3 starts with a guess of 500 and then finds if it's higher or lower than the users guess.</br>
+>    - Craig3 then finds the average of the high and low to make another guess and repeats that till reaches the users guess</br>
+>    - if the range is one higher and one lower than the users guess, Craig will guess that middle number
 
 ## Findings on Craig
 <b>8/12</b>: As I am designing and perfecting Craig, I am starting to realize that lowering the number of guesses will be almost impossible with a random num guesser. The main component I can change is the run time. I will keep trying to get the guess attempts lowered but I will also start focusing on the run time. </br>
