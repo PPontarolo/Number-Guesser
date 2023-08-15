@@ -17,7 +17,7 @@ Give Craig a number and Craig will try to guess the number that the user gives. 
 ### Craig2.py
 I took a different approach to this. I wanted to start the number guess by seeing if the user's number is higher or lower than 500. by doing this I have cut the numbers range in half hoping to make it easier for Craig2 </br>
 <i>Promise to change the names, but as of now, it's Craig and Craig2</i></br>
-    > - Craig2 has the same guess and change range process as Craig.py, besides having the 500 higher or lower check before entering the loop </br>
+    | - Craig2 has the same guess and change range process as Craig.py, besides having the 500 higher or lower check before entering the loop </br>
     > - Craig2 average guess is 12.4 out of 10 tries. 8-19 guesses range </br>
 
 ### Craig3.py
