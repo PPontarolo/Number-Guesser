@@ -16,7 +16,7 @@ def Game(count=1): ## user always will have one guess
         Game(count+1)
     else:
         print("You are greater than the number")
-        ## recureance
+        ## recreance
         Game(count+1)
 
 ## Call the function above
