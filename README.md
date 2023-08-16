@@ -8,8 +8,7 @@ Goal: The goal is to try to have Craig Guess the user's number with the least nu
 Average: When finding the average I am checking with only the number 345, and only doing 10 attempts in a row
 
 >### Craig.py
->Give Craig a number and Craig will try to guess the number that the user gives. </br>
->    - This version of Craig is all base on luck and random numbers with narrowing down his range. </br>
+>Give Craig a number and Craig will try to guess the number that the user gives. This version of Craig is all base on luck and random numbers with narrowing down his range. </br>
 >    - When Craig guesses, it is compared to the user's number and sees if it is higher or lower. If it is higher or lower than the users' number Craig will change his range to his guess plus 1. </br>
 >       - EX: Craig guesses 345. Users number is 543. Craig's number is lower than the users. Craig changes his range from 1-1000 to 346-1000</br>
 >       - Craig average guess is 12.5 out of 10 tries. 7-18 guesses range. Guessing with the same number 345 </br>
