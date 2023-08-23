@@ -4,7 +4,7 @@ import math ## helps with rounding
 
 ## while loops
 x = 0;y = 0
-
+'''
 while x < 1:
     play = input("Would you like to play? Y/N ")
     if play == 'Y':
@@ -22,10 +22,11 @@ while x < 1:
 
 print("Your number is {}" .format(Num)) 
 print("-_-_-_-_-_-_-_-_-_-")
+'''
 
 ## be able to change the high and low
 def Game(low, high):
-    count = 0; first = 0
+    count = 0; first = 0;Num = random.randint(1, 1000)
     CraigGuess = 500 ## set the first guess
     while y < 1:
         count+=1
@@ -51,6 +52,16 @@ def Game(low, high):
     print("Took Craig {} guesses" .format(count))
     print("-_-_-_-_-_-_-_-_-_-")
 
+    ## Getting the Average of the Count
+    global RealCount
+    RealCount = RealCount + count
+
+
 ## Run function    
 if __name__ == '__main__': 
-    Game(1,1000)
+    p = 0
+    RealCount = 0
+    while p < 100: 
+        Game(1,1000)
+        p+=1
+    print(RealCount / p)

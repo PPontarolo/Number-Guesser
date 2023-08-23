@@ -5,6 +5,7 @@ import random ## random
 x = 0
 y = 0
 
+'''
 while x < 1:
     ## PP: give "Craig" a number to guess
     Num = int(input("Give a number, that is 1-1000, for Craig to guess: "))
@@ -15,10 +16,11 @@ while x < 1:
 
 print("Your number is {}" .format(Num))
 print("-_-_-_-_-_-_-_-_-_-")
+'''
 
 ## be able to change the high and low
 def Game(low, high):
-    count = 0
+    count = 0;Num = random.randint(1, 1000)
     while y < 1:
         
         RanNum = random.randint(low, high)
@@ -36,6 +38,16 @@ def Game(low, high):
             low = RanNum + 1
     print("-_-_-_-_-_-_-_-_-_-")
 
+    ## Getting the Average of the Count
+    global RealCount
+    RealCount = RealCount + count
+
+
 ## Run function    
 if __name__ == '__main__': 
-    Game(1,1000)
+    p = 0
+    RealCount = 0
+    while p < 100: 
+        Game(1,1000)
+        p+=1
+    print(RealCount / p)
