@@ -18,6 +18,7 @@ Average: When finding the average I am checking with only the number 345, and on
 ><i>Promise to change the names, but as of now, it's Craig and Craig2</i></br>
 >    - Craig2 has the same guess and change range process as Craig.py, besides having the 500 higher or lower check before entering the loop </br>
 >       - Craig2 average guess is 11.27 out of 100 tries. Guessing number was random </br>
+>       - (1-(11.27/12.13))*100 ≈ 7.09% increase 
 
 >### Craig3.py
 >After doing some research I discovered that the best way of finding a number with a range of 1-1000 is finding the average of the low and high range. </br>
@@ -25,6 +26,8 @@ Average: When finding the average I am checking with only the number 345, and on
 >    - Craig3 then finds the average of the high and low to make another guess and repeats that till reaches the users guess</br>
 >    - if the range is one higher and one lower than the users guess, Craig will guess the middle number
 >      - Craig3 average guess is 8.84 out of 100 tries. Guessing number was random
+>      - (1-(8.84/12.13))*100 ≈ 27.12% increase from Craig
+>      - (1-(8.84/11.27))*100 ≈ 21.57% increase from Craig2
 
 >### Craig4.py (In the works)
 >Goal: To have a faster run time and be able to guess 1-10000 faster than 1-1000
@@ -33,16 +36,6 @@ Average: When finding the average I am checking with only the number 345, and on
 >CraigBin is going to be a number guesser but is doing it with the binary numbers. the range is 1-1024.</br>
 >Goal: to have CraigBin guess average be under 9.6 </br>
 > 
-
-## Findings on Craig.
-<b>8/12</b>: As I am designing and perfecting Craig, I am starting to realize that lowering the number of guesses will be almost impossible with a random num guesser. The main component I can change is the run time. I will keep trying to get the guess attempts lowered but I will also start focusing on the run time. </br>
-
-Though a shorter run time would be impressive, also not consistent, just like the guess attempts. </br>
-
-<b>8/14</b>: After doing Research I have found that 10 is the highest number of guesses someone needs to make while doing the most effective way of finding that number. The process is starting at 500, like Craig2.py, but keeps changing the range in half. This will make the formula (low+high)/2 (Average) till the number is found. </br>
-
-Craig3 works under 1-10 tries. He does the formula above and works great. I am using the library math to round the numbers up or down based on rounding rules. </br>
-
 
 
 ## User Guess
