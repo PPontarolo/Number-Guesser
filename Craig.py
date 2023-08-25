@@ -1,12 +1,8 @@
 ## PP: make a code that guess the users number that is between 1 - 1000
 import random ## random
 
-## while loops
-x = 0
-y = 0
-
 '''
-while x < 1:
+while 1 == 1:
     ## PP: give "Craig" a number to guess
     Num = int(input("Give a number, that is 1-1000, for Craig to guess: "))
     if Num < 1 or Num > 1000:
@@ -21,7 +17,7 @@ print("-_-_-_-_-_-_-_-_-_-")
 ## be able to change the high and low
 def Game(low, high):
     count = 0;Num = random.randint(1, 1000)
-    while y < 1:
+    while 1 ==  1:
         
         RanNum = random.randint(low, high)
         count+=1
