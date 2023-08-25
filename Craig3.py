@@ -4,8 +4,8 @@
 
 import random ## random
 import math ## helps with rounding
-import time
-start_time = time.time()
+import time ## for testing the program time
+start_time = time.time() ## Start
 
 '''
 while 1==1:
@@ -30,6 +30,8 @@ print("-_-_-_-_-_-_-_-_-_-")
 ## be able to change the high and low
 def Game(low, high):
     count = 0; first = 0;Num = random.randint(1, 1000)
+    
+    print("Your number is ", str(Num))
     CraigGuess = 500 ## set the first guess
     while 1==1:
         count+=1
@@ -63,5 +65,5 @@ if __name__ == '__main__':
     while p < 100: 
         Game(1,1000)
         p+=1
-    print(RealCount / p)
+    print(RealCount / p) ## gives the average of guesses
     print("--- %s seconds ---" % (time.time() - start_time))
