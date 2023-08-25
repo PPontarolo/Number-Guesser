@@ -1,6 +1,6 @@
 # Number-Guesser
 
-These are fun little projects that I randomly think of and start working on. they are for me to refresh my knowledge of Python.
+These are fun little projects that I randomly think of and start working on. They are for me to refresh my knowledge of Python.
 
 ## Craig's 
 
@@ -29,8 +29,12 @@ Average: When finding the average I am checking with only the number 345, and on
 >      - (1-(8.84/12.13))*100 ≈ 27.12% increase from Craig
 >      - (1-(8.84/11.27))*100 ≈ 21.57% increase from Craig2
 
->### Craig4.py (In the works) O(log n)
->Goal: Use recursion
+>### Craig4.py O(log n)
+>My goal for Craig4 is to use recursions. I used a binary search instead of a while loop, like Craig3. </br>
+>This is not faster or any ways better than Craig3. Since it has a Big o(log n) it is not constant and will be slower than Craig3. but not by much.</br>
+>The average is the same as Craig3 so it is not any way better
+>   - Binary search
+>       - Craig3 average guess is 8.89 out of 100 tries. Guessing number was random
 
 >### CraigBin.py (In the works)
 >CraigBin is going to be a number guesser but is doing it with the binary numbers. the range is 1-1024.</br>
@@ -41,5 +45,5 @@ Average: When finding the average I am checking with only the number 345, and on
 ## User Guess
 
 User Guess.py
-The user makes a guess. it will count the number of guesses through recurrence.
+The user makes a guess. It will count the number of guesses through recurrence.
 
