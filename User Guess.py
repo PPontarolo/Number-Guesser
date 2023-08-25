@@ -1,8 +1,6 @@
 import random
 
 RanNum = random.randint(1, 100)
-#print(type(RanNum)) ## had a type problem and this was me checking
-#print(RanNum) ## testing purposes
 
 def Game(count=1): ## user always will have one guess
     guess = int(input("Take a Guess: "))
@@ -12,11 +10,9 @@ def Game(count=1): ## user always will have one guess
         print("Took {} guesses" .format(count))
     elif guess < RanNum:
         print("you are less than the number")
-        ## recurance
         Game(count+1)
     else:
         print("You are greater than the number")
-        ## recreance
         Game(count+1)
 
 ## Call the function above
