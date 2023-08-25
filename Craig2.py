@@ -2,8 +2,6 @@
 import random ## random
 
 print("This is Craig2") ## so i can keep track
-
-
 ## PP: Got rid of the user side of this to test it
 '''
 
