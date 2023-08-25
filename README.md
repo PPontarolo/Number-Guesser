@@ -20,7 +20,7 @@ Average: When finding the average I am checking with only the number 345, and on
 >       - Craig2 average guess is 11.27 out of 100 tries. Guessing number was random </br>
 >       - (1-(11.27/12.13))*100 ≈ 7.09% increase 
 
->### Craig3.py
+>### Craig3.py O(1)
 >After doing some research I discovered that the best way of finding a number with a range of 1-1000 is finding the average of the low and high range. </br>
 >    - Craig3 starts with a guess of 500 and then finds if it's higher or lower than the user's guess.</br>
 >    - Craig3 then finds the average of the high and low to make another guess and repeats that till reaches the users guess</br>
@@ -29,8 +29,8 @@ Average: When finding the average I am checking with only the number 345, and on
 >      - (1-(8.84/12.13))*100 ≈ 27.12% increase from Craig
 >      - (1-(8.84/11.27))*100 ≈ 21.57% increase from Craig2
 
->### Craig4.py (In the works)
->Goal: To have a faster run time and be able to guess 1-10000 faster than 1-1000
+>### Craig4.py (In the works) O(log n)
+>Goal: Use recursion
 
 >### CraigBin.py (In the works)
 >CraigBin is going to be a number guesser but is doing it with the binary numbers. the range is 1-1024.</br>

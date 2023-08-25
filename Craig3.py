@@ -1,11 +1,14 @@
 ## PP: make a code that guess the users number that is between 1 - 1000
+
+## o(1)
+
 import random ## random
 import math ## helps with rounding
+import time
+start_time = time.time()
 
-## while loops
-x = 0;y = 0
 '''
-while x < 1:
+while 1==1:
     play = input("Would you like to play? Y/N ")
     if play == 'Y':
         ## PP: give "Craig" a number to guess
@@ -28,12 +31,9 @@ print("-_-_-_-_-_-_-_-_-_-")
 def Game(low, high):
     count = 0; first = 0;Num = random.randint(1, 1000)
     CraigGuess = 500 ## set the first guess
-    while y < 1:
+    while 1==1:
         count+=1
-        '''
-        if count == 12: ##Testing Purposes
-            break
-        '''
+
         if  CraigGuess > Num: ## too high
             print("Craig guessed {}. Craig guess is too high" .format(CraigGuess))
             high = CraigGuess
@@ -41,7 +41,7 @@ def Game(low, high):
         elif CraigGuess < Num: ## too low
             print("Craig guessed {}. Craig guess is too low" .format(CraigGuess))
             low = CraigGuess
-            CraigGuess = math.trunc(((low+high)/2))
+            CraigGuess = math.trunc(((low+high)//2))
         else: ## Success!
             break
         if high - 1 == low + 1 : ## since both numbers are guessed it guesses the middle one
@@ -56,12 +56,12 @@ def Game(low, high):
     global RealCount
     RealCount = RealCount + count
 
-
 ## Run function    
-if __name__ == '__main__': 
+if __name__ == '__main__':
     p = 0
     RealCount = 0
     while p < 100: 
         Game(1,1000)
         p+=1
     print(RealCount / p)
+    print("--- %s seconds ---" % (time.time() - start_time))
