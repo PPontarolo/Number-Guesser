@@ -3,13 +3,11 @@ import random ## random
 
 print("This is Craig2") ## so i can keep track
 
-## while loops
-x = 0
 
 ## PP: Got rid of the user side of this to test it
 '''
 
-while x < 1:
+while 1 == 1:
     play = input("Would you like to play? Y/N ")
     if play == 'Y':
         ## PP: give "Craig" a number to guess
@@ -34,7 +32,6 @@ def Game(low, high):
     ## made it always random
     Num = random.randint(1, 1000)
     count = 0
-    y = 0
 
     ## 500 check to cut the range into half
     count+=1
@@ -47,7 +44,7 @@ def Game(low, high):
         print("Craig guessed your number!! Your number is {}" .format(RanNum))
         print("Took Craig {} guesses" .format(count))
         
-    while y < 1:
+    while 1==1:
         
         RanNum = random.randint(low, high)
         count+=1
