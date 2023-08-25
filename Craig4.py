@@ -48,9 +48,3 @@ if __name__ == '__main__':
 
     print(RealCount/p) ## gives the average of guesses
     print("--- %s seconds ---" % (time.time() - start_time)) ## Stop
-
-
-
-    
-
-

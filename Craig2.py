@@ -13,7 +13,7 @@ while 1 == 1:
         ## PP: give "Craig" a number to guess
         Num = int(input("Give a number, that is 1-1000, for Craig to guess: "))
         if Num < 1 or Num > 1000:
-            print("Try Agian...")
+            print("Try agian...")
         else:
             break ## leave the loop
     elif play == 'N':
